@@ -1,0 +1,166 @@
+.head-hero{
+  background-color: #1A120B;
+  color: #E5E5CB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 95vh;
+}
+.hero-font{
+  font-family: 'DM Sans', sans-serif;
+  text-align: left;
+  margin: 10px;
+}
+.name{
+  font-weight: bold;
+  font-size: 140px;
+  margin: 0px;
+}
+.head-p{
+  margin: 0px;
+}
+
+
+.about-me{
+  background-color: #3C2A21;
+  color: #E5E5CB;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-me-p{
+  text-align: center;
+  width: 700px;
+  font-size: 25px;
+}
+.about-me-font > h2{
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.skills{
+  background-color:#50382c;
+}
+
+.skills-h2{
+  color: #E5E5CB;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.indi-logo{
+  width: 90px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.indi-logo:hover{
+  transition: 0.30s;
+  width:120px;
+}
+.skills{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.education{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #6e5244;
+  color: #E5E5CB;
+}
+.education-heading{
+  font-size: 80px;
+  text-align: center;
+  font-weight:bold;
+}
+.education-font{
+  font-size: 25px;
+}
+.university{
+  text-align: center;
+  font-weight: bold;
+}
+
+.internship{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #4f3a30;
+  color: #E5E5CB;
+}
+.internship-heading{
+  font-size: 80px;
+  text-align: center;
+  font-weight:bold;
+}
+.internship-font{
+  font-size: 25px;
+}
+.company{
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-heading{
+  font-size: 80px;
+  text-align: center;
+  font-weight:bold;
+}
+.contact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #4f3a30;
+  background-color: #E5E5CB;
+}
+
+.contact-img{
+  width: 90px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+
+
+@media (max-width:700px){
+  .name{
+    font-size: 60px;
+  }
+  .head-hero{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-bottom: 100px;
+  }
+  .hero-font{
+    text-align: center;
+  }
+
+  .about-me-p{
+    width: auto;
+  }
+
+  .about-me-font > h2{
+    font-size: 60px;
+  }
+  .skills-h2{
+    font-size: 60px;  
+  }
+  .education-heading{
+    font-size: 60px;
+  }
+  .internship-heading{
+    font-size: 60px;
+  }
+  .contact-heading{
+    font-size: 60px;
+  }
+}
