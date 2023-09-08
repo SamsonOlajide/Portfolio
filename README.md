@@ -17,3 +17,15 @@ Things i wish i made better:
 5. Create a project section which showcases all the projects which i've done
 
 Since this is going to be website of my actual prtfolio from now on, i will be rectifying mistakes which i perfromed and also make sure that it is updated as often as possible in orde to make the website behave much better and to showcase things i've learnt up to that moment.
+
+As of the 8th of September 2023 this i what the website looks like:
+
+- Standard desktop view:
+![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/43fc6de0-b92c-4937-8242-44aa84efc89b)
+
+- Tablet view:
+![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/1074e1c7-fb40-4c9e-9b41-b1ffd4fe038a)
+
+-Phone view
+![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/1b493189-4ba0-4a5c-bc9d-483040b6d745)
+
