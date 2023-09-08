@@ -29,7 +29,7 @@ As of the 8th of September 2023 this i what the website looks like:
 
 ![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/1074e1c7-fb40-4c9e-9b41-b1ffd4fe038a)
 
--Phone view:
+- Phone view:
 
 ![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/1b493189-4ba0-4a5c-bc9d-483040b6d745)
 
