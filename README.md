@@ -10,11 +10,11 @@ Things i was able to successfully perform during the creation of the website:
 3. I believe i've gotten better with research and using the piece of information which i have found ont he internet to make my website come out the way i intend it to.
 
 Things i wish i made better:
-1. I wish to make it more aesthetically pleasing and making it look more engaging
-2. I wish to make the classes have a detailed meaning
-3. Make it have comments which describe what each section of code does
-4. Make the CSS more structured in an organised manner whcih is able to be understood
-5. Create a project section which showcases all the projects which i've done
+1. I wish to make it more aesthetically pleasing and making it look more engaging.
+2. I wish to make the classes have a detailed meaning.
+3. Make it have comments which describe what each section of code does.
+4. Make the CSS more structured in an organised manner whcih is able to be understood.
+5. Create a project section which showcases all the projects which i've done.
 6. Make text smaller on phone view.
 
 Since this is going to be website of my actual prtfolio from now on, i will be rectifying mistakes which i perfromed and also make sure that it is updated as often as possible in orde to make the website behave much better and to showcase things i've learnt up to that moment.
