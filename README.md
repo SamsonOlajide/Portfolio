@@ -39,6 +39,7 @@ As of the 8th of September 2023 this i what the website looks like:
 2. Changed class names to become much easier.
 3. Added links int the contact me section.
 4. Added div dividers to make it look aesthetically pleasing
+5. made the text smaller to fit smaller devices
 
 As of the 9th of September 2023 this i what the website looks like:
 
