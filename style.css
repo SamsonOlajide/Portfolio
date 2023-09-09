@@ -1,3 +1,21 @@
+
+/*setting the correct type of font*/
+*{
+  font-family: 'DM Sans', sans-serif;
+}
+/*--------------*/
+
+/*Subheading CSS design*/
+.subhead{
+  font-size: 80px;
+  color: #E5E5CB;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+/*--------------*/
+
+/* Hero/Header for the beginning of the page (CSS)*/
 .head-hero{
   background-color: #1A120B;
   color: #E5E5CB;
@@ -5,61 +23,46 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  height: 95vh;
+  height: 74vh;
 }
 .hero-font{
-  font-family: 'DM Sans', sans-serif;
   text-align: left;
   margin: 10px;
+}
+.head-h2{
+  margin: 0px;
 }
 .name{
   font-weight: bold;
   font-size: 140px;
   margin: 0px;
 }
-.head-p{
-  margin: 0px;
+.paragraph{
+  font-size: 25px;
 }
+/*--------------*/
 
-
+/*About me section*/
 .about-me{
   background-color: #3C2A21;
   color: #E5E5CB;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
+
 .about-me-p{
   text-align: center;
-  width: 700px;
-  font-size: 25px;
-}
-.about-me-font > h2{
-  font-size: 80px;
   display: flex;
-  justify-content: center;
-  font-weight: bold;
+  width: 1000px;
 }
+/*--------------*/
 
+/*Skills section w the logos*/
 .skills{
   background-color:#50382c;
-}
-
-.skills-h2{
   color: #E5E5CB;
-  font-size: 80px;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
 }
 
-.logos{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 2rem;
-}
 .indi-logo{
   width: 90px;
   aspect-ratio: 3/2;
@@ -69,56 +72,38 @@
   transition: 0.30s;
   width:120px;
 }
-.skills{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+/*--------------*/
+
+/*Education CSS section*/
 .education{
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #6e5244;
   color: #E5E5CB;
-}
-.education-heading{
-  font-size: 80px;
-  text-align: center;
-  font-weight:bold;
-}
-.education-font{
-  font-size: 25px;
 }
 .university{
   text-align: center;
   font-weight: bold;
 }
+/*--------------*/
 
+/*internship history(CSS)*/
 .internship{
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #4f3a30;
   color: #E5E5CB;
-}
-.internship-heading{
-  font-size: 80px;
-  text-align: center;
-  font-weight:bold;
-}
-.internship-font{
-  font-size: 25px;
 }
 .company{
   text-align: center;
   font-weight: bold;
 }
+/*--------------*/
 
+/*Contact Me div (CSS design)*/
 .contact-heading{
   font-size: 80px;
   text-align: center;
   font-weight:bold;
 }
+
 .contact{
-  padding-top: 50px;
-  padding-bottom: 50px;
   color: #4f3a30;
   background-color: #E5E5CB;
 }
@@ -128,10 +113,16 @@
   aspect-ratio: 3/2;
   object-fit: contain;
 }
+/*--------------*/
 
+/*sizing and media compatibility*/
+@media (max-width:1000px){
+  .about-me-p{
+    width: auto;
+  }
+}
 
-
-@media (max-width:700px){
+@media (max-width:500px){
   .name{
     font-size: 60px;
   }
@@ -148,19 +139,15 @@
     width: auto;
   }
 
-  .about-me-font > h2{
+  .subhead{
     font-size: 60px;
   }
-  .skills-h2{
-    font-size: 60px;  
-  }
-  .education-heading{
-    font-size: 60px;
-  }
-  .internship-heading{
-    font-size: 60px;
-  }
+
   .contact-heading{
-    font-size: 60px;
+    font-size:60px;
+  }
+  .paragraph{
+    font-size: 20px;
   }
 }
+/*--------------*/

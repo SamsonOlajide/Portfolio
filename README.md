@@ -33,3 +33,26 @@ As of the 8th of September 2023 this i what the website looks like:
 
 ![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/1b493189-4ba0-4a5c-bc9d-483040b6d745)
 
+
+9th of September 2023:
+1. Added comments for the HTML and css to make code documentation better.
+2. Changed class names to become much easier.
+3. Added links int the contact me section.
+4. Added div dividers to make it look aesthetically pleasing
+5. made the text smaller to fit smaller devices
+
+As of the 9th of September 2023 this i what the website looks like:
+
+- Standard desktop view:
+
+![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/7949ca9d-44c8-447b-8a64-f45247fa4f6b)
+
+- Tablet view:
+
+![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/05eb9023-4f5f-407c-b6fa-b9d8f25f00fd)
+
+- Phone view:
+
+![alt text](https://github.com/SamsonOlajide/Portfolio/assets/112396198/e7a2aae4-f7c8-4147-bf7b-8bf1b2400699)
+
+
