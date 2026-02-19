@@ -85,7 +85,6 @@ const education = {
 
 const contactLinks = [
   { label: 'Email', href: 'mailto:samsonolajide03@gmail.com' },
-  { label: 'Phone', href: 'tel:+447490750450' },
   { label: 'GitHub (Personal)', href: 'https://github.com/SamsonOlajide' },
   { label: 'GitHub (Work)', href: 'https://github.com/SamsonOlajide03' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/samson-olajide-a74847243/' },
