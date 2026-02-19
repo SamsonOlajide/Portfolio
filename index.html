@@ -21,8 +21,20 @@
 </head>
 
 <body>
+
+  <header class="d-flex justify-content-center py-3">
+    <ul class="selector">
+      <li class="nav-item"><a href="#home" class="nav-link p-2 hov">Home</a></li>
+      <li class="nav-item"><a href="#about-me" class="nav-link p-2 hov">About</a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link p-2 hov">Skills</a></li>
+      <li class="nav-item"><a href="#education" class="nav-link p-2 hov">Education</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link p-2 hov">Contact</a></li>
+    </ul>
+  </header>
+
+
   <!--Creating a Hero/Header for the beginning of the page-->
-  <div class = "head-hero">
+  <div class = "head-hero py-5" id = "home">
     <div class = "hero-font">
       <h2 class = "head-h2">Hello there👋🏾, I’m</h2>
       <h1 class = "name">Samson.</h1>
@@ -31,23 +43,25 @@
   </div>
   <!----------------->
 
-  <img src="./images/Background-colours/wave1.svg" alt="Div Divider(waves1)" style="background-color: #3C2A21; width: 100%;">
+
 
   <!--Creating an about me section-->
-  <div class = "about-me py-5"> 
+  <div class = "about-me py-5" id = "about-me"> 
     <div class = "about-me-font">
       <h2 class = "subhead">About me</h2>
-      <p class = "about-me-p paragraph">i am 19, I was born in Nigeria then moved to the Uk at the age of 14. 
-        From a really young age of having internet access and downloading a bunch of apps that made the family’s computer slow down 😅 to coding mods on Minecraft that I could show off to my friends, 
-        the never ending passion for seeing how computers were able to communicate with one another did not make me question if i wanted to do something in this field, after finding what Software Engineering was, 
-        i haven’t stopped chasing that dream which my younger self would’ve been proud of.
+      <p class = "about-me-p paragraph" style="padding-bottom: 5px;">i am 19, I was born in Nigeria then moved to the Uk at the age of 14. 
+        From a really young age of having internet access and downloading a bunch of apps that made the family’s computer slow down 😅 to coding mods on Minecraft that I could show off to my friends. 
+      </p>
+
+      <p class = "about-me-p paragraph">
+        The never ending passion for seeing how computers were able to communicate with one another did not make me question if i wanted to do something in this field, after finding what Software Engineering was, 
+        i haven’t stopped chasing that dream which my younger self would be proud of.
       </p>
     </div>
   </div>
   <!----------------->
-  <img src="./images/Background-colours/wave2.svg" alt="Div Divider(waves2)" style="background-color: #50382c; width: 100%;">
   <!--Div which includes the various things which i have learnt-->
-  <div class = "skills py-5">
+  <div class = "skills py-5" id = "skills">
     <h2 class="subhead">Skills</h2>
     <div class="container text-center">
       <div class="row">
@@ -62,9 +76,9 @@
     </div>
   </div>
   <!----------------->
-  <img src="./images/Background-colours/wave3.svg" alt="Div Divider(waves3)" style="background-color: #6e5244; width: 100%;">
+
   <!--Creating and Education div to show of my qualifications/progress-->
-  <div class="education py-5">
+  <div class="education py-5" id = "education">
     <div class = "container">
       <h2 class="subhead">Education</h2>
       <p class = "university paragraph">Oxford Brookes University(Computer Science) 2022 - 2026</p>
@@ -88,7 +102,6 @@
     </div>
   </div>
   <!----------------->
-  <img src="./images/Background-colours/wave4.svg" alt="Div Divider(waves4)" style="background-color: #4f3a30; width: 100%;">
   <!--Created a div to show off my internship history-->
   <div class="internship py-5">
     <div class = "container">
@@ -111,20 +124,19 @@
     </div>
   </div>
   <!----------------->
-  <img src="./images/Background-colours/wave5.svg" alt="Div Divider(waves5)" style="background-color: #E5E5CB; width: 100%;">
   <!--contact me section-->
-  <div class = "contact py-5">
+  <div class = "contact py-5" id="contact">
     <div>
       <h2 class ="contact-heading">Contact me👋🏾</h2>
         <div class = "container">
           <div class ="row text-center py-4">
-            <div class="col-6"><a href="https://github.com/SamsonOlajide"><img class ="contact-img" src="./images/Icons/github.png" alt="GitHub logo link"></a></div>
-            <div class="col-6"><a href="https://www.linkedin.com/in/samson-olajide-a74847243/"><img  class ="contact-img" src="./images/Icons/linkedin.png" alt="linkedin logo link"></a></div>  
+            <div class="col-4 "><a class="links" href="https://github.com/SamsonOlajide">GitHub</a></div>
+            <div class="col-4 "><a class="links" href="https://www.linkedin.com/in/samson-olajide-a74847243/">Linkedin</a></div> 
+            <div class="col-4 "><a class="links" href="mailto:samsonolajide03@gmail.com">Email</a></div> 
           </div>
         </div>
     </div>
   </div>
-
   <!----------------->
 </body>
 </html>

@@ -2,23 +2,41 @@
 /*setting the correct type of font*/
 *{
   font-family: 'DM Sans', sans-serif;
+  background-color: #272635;
+  color: #EBEBEB;
+  justify-content: center;
+  align-items: center;
 }
 /*--------------*/
+
+.selector{
+  list-style-type: none;
+  display: flex;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hov{
+  border-radius: 5px;
+}
+
+.hov:hover{
+  transition: 0.30s;
+  background-color: #B8336A;
+}
+
 
 /*Subheading CSS design*/
 .subhead{
   font-size: 80px;
-  color: #E5E5CB;
   display: flex;
   justify-content: center;
   font-weight: bold;
 }
 /*--------------*/
-
 /* Hero/Header for the beginning of the page (CSS)*/
 .head-hero{
-  background-color: #1A120B;
-  color: #E5E5CB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +55,10 @@
   font-size: 140px;
   margin: 0px;
 }
+.name:hover{
+  transition: 0.30s;
+  color:#84A98C ;
+}
 .paragraph{
   font-size: 25px;
 }
@@ -44,8 +66,6 @@
 
 /*About me section*/
 .about-me{
-  background-color: #3C2A21;
-  color: #E5E5CB;
   display: flex;
   justify-content: center;
 }
@@ -59,8 +79,6 @@
 
 /*Skills section w the logos*/
 .skills{
-  background-color:#50382c;
-  color: #E5E5CB;
 }
 
 .indi-logo{
@@ -76,8 +94,6 @@
 
 /*Education CSS section*/
 .education{
-  background-color: #6e5244;
-  color: #E5E5CB;
 }
 .university{
   text-align: center;
@@ -87,8 +103,6 @@
 
 /*internship history(CSS)*/
 .internship{
-  background-color: #4f3a30;
-  color: #E5E5CB;
 }
 .company{
   text-align: center;
@@ -103,10 +117,6 @@
   font-weight:bold;
 }
 
-.contact{
-  color: #4f3a30;
-  background-color: #E5E5CB;
-}
 
 .contact-img{
   width: 90px;
@@ -114,6 +124,16 @@
   object-fit: contain;
 }
 /*--------------*/
+
+.links{
+  font-size: 30px;
+  text-decoration: none;
+  color: #EBEBEB;
+}
+.links:hover{
+  transition: 0.20s;
+  color: #B8336A;
+}
 
 /*sizing and media compatibility*/
 @media (max-width:1000px){
@@ -137,6 +157,7 @@
 
   .about-me-p{
     width: auto;
+    padding: 30px;
   }
 
   .subhead{
