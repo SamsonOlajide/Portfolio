@@ -6,10 +6,10 @@ import { ParticlesLinks } from '../components/particles-links';
 import { useTheme } from '../components/theme-provider';
 
 const skills = [
-  'Java',
   'Python',
   'TypeScript',
   'React Native',
+  'Java',
   'HTML',
   'CSS',
   'JavaScript',
@@ -86,13 +86,16 @@ const education = {
 const contactLinks = [
   { label: 'Email', href: 'mailto:samsonolajide03@gmail.com' },
   { label: 'Phone', href: 'tel:+447490750450' },
-  { label: 'GitHub', href: 'https://github.com/SamsonOlajide' },
-  { label: 'Portfolio', href: 'https://samsonolajide.github.io/Portfolio/' }
+  { label: 'GitHub (Personal)', href: 'https://github.com/SamsonOlajide' },
+  { label: 'GitHub (Work)', href: 'https://github.com/SamsonOlajide03' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/samson-olajide-a74847243/' },
 ];
+const resumeFilePath = '/resume/Samson-Olajide-Resume.pdf';
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -105,11 +108,24 @@ export default function Home() {
 
       <header className="top-nav glass">
         <span className="brand">SO</span>
-        <nav className="nav-links" aria-label="Main navigation">
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-          <a href="#resume">Resume</a>
+        <button
+          className="mobile-nav-toggle"
+          onClick={() => setMobileNavOpen((prev) => !prev)}
+          aria-expanded={mobileNavOpen}
+          aria-controls="main-nav"
+        >
+          Menu
+        </button>
+        <nav
+          id="main-nav"
+          className={`nav-links ${mobileNavOpen ? 'mobile-open' : ''}`}
+          aria-label="Main navigation"
+        >
+          <a href="#experience" onClick={() => setMobileNavOpen(false)}>Experience</a>
+          <a href="#projects" onClick={() => setMobileNavOpen(false)}>Projects</a>
+          <a href="#academia" onClick={() => setMobileNavOpen(false)}>Academia</a>
+          <a href="#resume" onClick={() => setMobileNavOpen(false)}>Resume</a>
+          <a href="#contact" onClick={() => setMobileNavOpen(false)}>Contact</a>
         </nav>
         <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
           {mounted ? (theme === 'dark' ? 'Light' : 'Dark') : 'Theme'}
@@ -182,7 +198,7 @@ export default function Home() {
       <section className="section" id="projects">
         <div className="section-header">
           <p className="eyebrow">Personal Projects</p>
-          <h2>Built and shipped</h2>
+          <h2>Current projects I work on</h2>
         </div>
         <div className="project-grid">
           {projects.map((project) => (
@@ -204,18 +220,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="resume">
+      <section className="section" id="academia">
         <div className="section-header">
           <p className="eyebrow">Education and Certification</p>
           <h2>Academic profile</h2>
         </div>
+        <div className="project-grid">
+          <article className="project-card glass card-animate">
+            <h3>{education.school}</h3>
+            <p className="muted">{education.location}</p>
+            <p className="role-item">{education.degree} ({education.period})</p>
+            <p className="muted">{education.grade}</p>
+            <p className="role-item">Modules: {education.modules.join(', ')}</p>
+          </article>
+          <article className="project-card glass card-animate">
+            <h3>Certification</h3>
+            <p className="role-item">AWS Solutions Architect - Associate</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="section" id="resume">
+        <div className="section-header">
+          <p className="eyebrow">Resume</p>
+          <h2>View and download</h2>
+        </div>
         <article className="project-card glass card-animate">
-          <h3>{education.school}</h3>
-          <p className="muted">{education.location}</p>
-          <p className="role-item">{education.degree} ({education.period})</p>
-          <p className="muted">{education.grade}</p>
-          <p className="role-item">Modules: {education.modules.join(', ')}</p>
-          <p className="role-item">Certification: AWS Solutions Architect - Associate</p>
+          <div className="actions">
+            <a href={resumeFilePath} target="_blank" rel="noreferrer" className="button primary">
+              View Resume
+            </a>
+            <a href={resumeFilePath} download className="button ghost">
+              Download Resume
+            </a>
+          </div>
+          <div className="resume-viewer-wrap">
+            <iframe
+              title="Samson Olajide Resume"
+              src={`${resumeFilePath}#view=FitH`}
+              className="resume-viewer"
+            />
+          </div>
         </article>
       </section>
 
