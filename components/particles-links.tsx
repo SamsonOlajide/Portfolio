@@ -25,6 +25,8 @@ export function ParticlesLinks({ theme }: { theme: Theme }) {
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
+    const activeCanvas = canvas;
+    const activeCtx = ctx;
 
     let rafId = 0;
     let width = 0;
@@ -50,15 +52,15 @@ export function ParticlesLinks({ theme }: { theme: Theme }) {
       dpr = window.devicePixelRatio || 1;
       width = window.innerWidth;
       height = window.innerHeight;
-      canvas.width = Math.floor(width * dpr);
-      canvas.height = Math.floor(height * dpr);
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${height}px`;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      activeCanvas.width = Math.floor(width * dpr);
+      activeCanvas.height = Math.floor(height * dpr);
+      activeCanvas.style.width = `${width}px`;
+      activeCanvas.style.height = `${height}px`;
+      activeCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
     }
 
     function tick() {
-      ctx.clearRect(0, 0, width, height);
+      activeCtx.clearRect(0, 0, width, height);
 
       for (let i = 0; i < particles.length; i += 1) {
         const p = particles[i];
@@ -68,10 +70,10 @@ export function ParticlesLinks({ theme }: { theme: Theme }) {
         if (p.x <= 0 || p.x >= width) p.vx *= -1;
         if (p.y <= 0 || p.y >= height) p.vy *= -1;
 
-        ctx.beginPath();
-        ctx.fillStyle = palette.point;
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fill();
+        activeCtx.beginPath();
+        activeCtx.fillStyle = palette.point;
+        activeCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        activeCtx.fill();
 
         for (let j = i + 1; j < particles.length; j += 1) {
           const q = particles[j];
@@ -81,12 +83,12 @@ export function ParticlesLinks({ theme }: { theme: Theme }) {
           if (dist > linkDistance) continue;
 
           const alpha = (1 - dist / linkDistance) * (theme === "dark" ? 0.36 : 0.26);
-          ctx.beginPath();
-          ctx.strokeStyle = `rgba(${palette.line}, ${alpha})`;
-          ctx.lineWidth = 1;
-          ctx.moveTo(p.x, p.y);
-          ctx.lineTo(q.x, q.y);
-          ctx.stroke();
+          activeCtx.beginPath();
+          activeCtx.strokeStyle = `rgba(${palette.line}, ${alpha})`;
+          activeCtx.lineWidth = 1;
+          activeCtx.moveTo(p.x, p.y);
+          activeCtx.lineTo(q.x, q.y);
+          activeCtx.stroke();
         }
       }
 
